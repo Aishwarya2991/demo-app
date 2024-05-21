@@ -3,7 +3,6 @@ pipeline {
         dockerfile {
             dir '.'
             filename 'Dockerfile'
-            label 'ssh'
             args '-v /var/run/docker.sock:/var/run/docker.sock -u root'
         }
     }
